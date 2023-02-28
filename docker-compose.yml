@@ -3,6 +3,7 @@ services:
   smtp:
     image: namshi/smtp
     container_name: smtp_relay
+    hostname: smtp1
     restart: always
     ports:
      - "25:25"
